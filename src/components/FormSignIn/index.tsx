@@ -1,23 +1,20 @@
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Input } from "../Input";
 
 const FormSignIn = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
 
-      <Text style={styles.labelUser}>Usuário</Text>
-      <TextInput
+      <Input
+        label="Usuário"
         placeholder="Digitar usuário"
         keyboardType="default"
-        style={styles.input}
-        placeholderTextColor="#868E96"
       />
-      <Text style={styles.labelPassword}>Senha</Text>
-      <TextInput
+      <Input
+        label="Senha"
         placeholder="Digitar senha"
         keyboardType="visible-password"
-        style={styles.input}
-        placeholderTextColor="#868E96"
       />
 
       <Text style={styles.linkMyPassword}>Esqueci minha senha</Text>
@@ -55,31 +52,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 24,
     lineHeight: 30,
-  },
-  labelUser: {
-    fontWeight: "500",
-    fontSize: 14,
-    lineHeight: 17,
-    color: "#212529",
-    paddingTop: 28,
-    paddingBottom: 7,
-  },
-  labelPassword: {
-    fontWeight: "500",
-    fontSize: 14,
-    lineHeight: 17,
-    color: "#212529",
-    paddingTop: 22.5,
-    paddingBottom: 7,
-  },
-  input: {
-    borderWidth: 2,
-    borderColor: "#E9ECEF",
-    paddingLeft: 16,
-    paddingRight: 16,
-    borderRadius: 4,
-    height: 48,
-    fontSize: 16,
+    paddingBottom: 12.5,
   },
   linkMyPassword: {
     color: "#495057",
