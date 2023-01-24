@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#4529E6",
     borderRadius: 4,
+    width: 274,
   },
   buttonBlueText: {
     fontWeight: "600",
@@ -61,6 +62,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#ADB5BD",
     borderRadius: 4,
+    width: 274,
   },
   buttonWhiteText: {
     fontWeight: "600",

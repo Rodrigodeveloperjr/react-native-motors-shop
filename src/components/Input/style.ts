@@ -23,6 +23,15 @@ const styles = StyleSheet.create({
     height: 48,
     fontSize: 16,
   },
+  borderError: {
+    borderColor: "#CD2B31",
+  },
+  errorMessage: {
+    fontWeight: "500",
+    fontSize: 14,
+    lineHeight: 17,
+    color: "#CD2B31",
+  },
 });
 
 export { styles };

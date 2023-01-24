@@ -1,21 +1,18 @@
-import { KeyboardTypeOptions, Text, TextInput, View } from "react-native";
+import { Text, TextInput, View } from "react-native";
 import { styles } from "./style";
 
-interface InputProps {
-  label: string;
-  placeholder: string;
-  keyboardType?: KeyboardTypeOptions | undefined;
-}
-
-const Input = ({ label, placeholder, keyboardType }: InputProps) => {
+const Input = ({ label, error, ...inputProps }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{label}</Text>
+      <Text style={styles.label}>
+        {label}
+        {!!error && <Text style={styles.errorMessage}> - {error.message}</Text>}
+      </Text>
+
       <TextInput
-        placeholder={placeholder}
-        keyboardType={keyboardType}
-        style={styles.input}
+        style={[styles.input, !!error && styles.borderError]}
         placeholderTextColor={"#868E96"}
+        {...inputProps}
       />
     </View>
   );
