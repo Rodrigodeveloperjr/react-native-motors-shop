@@ -1,4 +1,4 @@
-import { KeyboardTypeOptions, Text, TextInput } from "react-native";
+import { KeyboardTypeOptions, Text, TextInput, View } from "react-native";
 import { styles } from "./style";
 
 interface InputProps {
@@ -9,15 +9,15 @@ interface InputProps {
 
 const Input = ({ label, placeholder, keyboardType }: InputProps) => {
   return (
-    <>
+    <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>
       <TextInput
         placeholder={placeholder}
         keyboardType={keyboardType}
         style={styles.input}
-        placeholderTextColor="#868E96"
+        placeholderTextColor={"#868E96"}
       />
-    </>
+    </View>
   );
 };
 

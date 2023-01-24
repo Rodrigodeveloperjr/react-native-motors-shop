@@ -2,6 +2,7 @@ import { FormSignUp } from "../../components/FormSignUp";
 import { Header } from "../../../src/components/Header";
 import { Footer } from "../../../src/components/Footer";
 import { ScrollView, View } from "react-native";
+import { styles } from "../SignIn/style";
 
 const SignUp = () => {
   return (
@@ -18,21 +19,3 @@ const SignUp = () => {
 };
 
 export { SignUp };
-import { StyleSheet } from "react-native";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFFFFF",
-    fontFamily: "Lexend",
-  },
-  main: {
-    backgroundColor: "#E9ECEF",
-    paddingTop: 48,
-    paddingBottom: 48,
-    paddingLeft: 15,
-    paddingRight: 15,
-  },
-});
-
-export { styles };
