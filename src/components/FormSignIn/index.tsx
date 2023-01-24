@@ -5,14 +5,14 @@ const FormSignIn = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
 
-      <Text style={styles.label}>Usuário</Text>
+      <Text style={styles.labelUser}>Usuário</Text>
       <TextInput
         placeholder="Digitar usuário"
         keyboardType="default"
         style={styles.input}
         placeholderTextColor="#868E96"
       />
-      <Text style={styles.label}>Senha</Text>
+      <Text style={styles.labelPassword}>Senha</Text>
       <TextInput
         placeholder="Digitar senha"
         keyboardType="visible-password"
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     paddingBottom: 44,
     paddingLeft: 28,
     paddingRight: 28,
-    width: 343,
+    maxWidth: 343,
     height: 542,
     backgroundColor: "#FDFDFD",
     borderRadius: 4,
@@ -56,7 +56,15 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 30,
   },
-  label: {
+  labelUser: {
+    fontWeight: "500",
+    fontSize: 14,
+    lineHeight: 17,
+    color: "#212529",
+    paddingTop: 28,
+    paddingBottom: 7,
+  },
+  labelPassword: {
     fontWeight: "500",
     fontSize: 14,
     lineHeight: 17,
@@ -79,9 +87,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 24,
     textAlign: "right",
-    paddingRight: 37,
     paddingTop: 10,
-    paddingBottom: 20,
+    paddingBottom: 25,
+    textDecorationLine: "underline",
   },
   buttonBlue: {
     backgroundColor: "#4529E6",
@@ -115,7 +123,7 @@ const styles = StyleSheet.create({
     paddingRight: 28,
     width: 286.09,
     height: 48,
-    borderWidth: 2,
+    borderWidth: 1.5,
     borderColor: "#ADB5BD",
     borderRadius: 4,
   },
