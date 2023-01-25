@@ -1,16 +1,16 @@
 import { Text, View } from "react-native";
 import { EmptyMessage } from "../EmptyMessage";
-import { styles } from "./style";
+import { styles } from "../ListCars/style";
 
-const ListCars = () => {
+const ListMotorcycles = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.subtitle}>Carros</Text>
+      <Text style={styles.subtitle}>Motos</Text>
       <View style={styles.menu}>
-        <EmptyMessage message="Não há carros" />
+        <EmptyMessage message="Não há motos" />
       </View>
     </View>
   );
 };
 
-export { ListCars };
+export { ListMotorcycles };

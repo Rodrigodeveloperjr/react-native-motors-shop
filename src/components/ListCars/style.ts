@@ -2,8 +2,8 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 100,
-    paddingBottom: 100,
+    paddingTop: 50,
+    paddingBottom: 50,
     paddingLeft: 20,
   },
   subtitle: {
@@ -12,16 +12,6 @@ const styles = StyleSheet.create({
     lineHeight: 30,
   },
   menu: {
-    height: 388,
-    display: "flex",
-    alignItems: "center",
-    flexDirection: "row",
-  },
-  text: {
-    fontSize: 25,
-    color: "#868E96",
-    fontWeight: "600",
-    paddingLeft: 20,
   },
 });
 
