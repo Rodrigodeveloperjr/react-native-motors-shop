@@ -6,15 +6,16 @@ import { styles } from "./style";
 
 const SignIn = () => {
   return (
-    <ScrollView style={styles.container}>
+    <>
       <Header />
+      <ScrollView style={styles.container}>
+        <View style={styles.main}>
+          <FormSignIn />
+        </View>
 
-      <View style={styles.main}>
-        <FormSignIn />
-      </View>
-
-      <Footer />
-    </ScrollView>
+        <Footer />
+      </ScrollView>
+    </>
   );
 };
 
