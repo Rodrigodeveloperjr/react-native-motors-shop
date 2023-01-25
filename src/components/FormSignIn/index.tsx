@@ -1,4 +1,4 @@
-import { Alert, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { Input } from "../Input";
 import { styles } from "./style";
 import { useForm } from "react-hook-form";
@@ -8,13 +8,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 const FormSignIn = () => {
   const fieldsValidationSchema = yup.object().shape({
-    email: yup
-      .string()
-      .required("O email não pode ser vazio")
-      .email("Email inválido"),
+    email: yup.string().required("Usuário obrigatório").email("Email inválido"),
     password: yup
       .string()
-      .required("A senha não pode ser vazia")
+      .required("Senha obrigatória")
       .min(6, "Mínimo 8 dígitos"),
   });
 
@@ -30,7 +27,7 @@ const FormSignIn = () => {
     register("password");
   }, [register]);
 
-  const onSubmit = (data: any) => Alert.alert(data.email, data.password);
+  const onSubmit = (data: any) => console.log(data);
 
   return (
     <View style={styles.container}>
@@ -40,33 +37,30 @@ const FormSignIn = () => {
         label="Usuário"
         placeholder="Digitar usuário"
         keyboardType="default"
-        onChangeText={(text: any) => setValue("email", text)}
+        onChangeText={(text: string) => setValue("email", text)}
         error={errors?.email}
         required={true}
       />
       <Input
         label="Senha"
         placeholder="Digitar senha"
-        keyboardType="visible-password"
-        onChangeText={(text: any) => setValue("password", text)}
+        keyboardType="default"
+        onChangeText={(text: string) => setValue("password", text)}
         error={errors?.password}
         required={true}
+        secureTextEntry={true}
       />
 
       <Text style={styles.linkMyPassword}>Esqueci minha senha</Text>
 
       <View style={styles.viewButtons}>
-        <View style={styles.buttonBlue}>
-          <Text style={styles.buttonBlueText} onPress={handleSubmit(onSubmit)}>
-            Entrar
-          </Text>
-        </View>
+        <Text style={styles.buttonBlue} onPress={handleSubmit(onSubmit)}>
+          Entrar
+        </Text>
 
         <Text style={styles.textAccount}>Ainda não possui conta?</Text>
 
-        <View style={styles.buttonWhite}>
-          <Text style={styles.buttonWhiteText}>Cadastrar</Text>
-        </View>
+        <Text style={styles.buttonWhite}>Cadastrar</Text>
       </View>
     </View>
   );

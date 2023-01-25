@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#4529E6",
     borderRadius: 4,
+    fontWeight: "600",
+    fontSize: 16,
+    color: "#FFFFFF",
+    textAlign: "center",
   },
   buttonBlueFinally: {
     backgroundColor: "#4529E6",
@@ -50,8 +54,6 @@ const styles = StyleSheet.create({
     borderColor: "#4529E6",
     borderRadius: 4,
     marginTop: 15,
-  },
-  buttonBlueText: {
     fontWeight: "600",
     fontSize: 16,
     color: "#FFFFFF",
@@ -66,8 +68,6 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#ADB5BD",
     borderRadius: 4,
-  },
-  buttonWhiteText: {
     fontWeight: "600",
     fontSize: 16,
     color: "#0B0D0D",

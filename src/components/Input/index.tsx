@@ -10,7 +10,7 @@ const Input = ({ label, error, ...inputProps }) => {
       </Text>
 
       <TextInput
-        style={[styles.input, !!error && styles.borderError]}
+        style={styles.input}
         placeholderTextColor={"#868E96"}
         {...inputProps}
       />

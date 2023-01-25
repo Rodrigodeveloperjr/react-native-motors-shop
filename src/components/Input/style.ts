@@ -23,10 +23,6 @@ const styles = StyleSheet.create({
     height: 48,
     fontSize: 16,
   },
-  borderError: {
-    borderColor: "#CD2B31",
-    borderWidth: 1.5,
-  },
   errorMessage: {
     fontWeight: "500",
     fontSize: 14,

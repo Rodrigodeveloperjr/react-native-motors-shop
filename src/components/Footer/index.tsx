@@ -9,7 +9,7 @@ const Footer = () => {
         source={require("../../../assets/Motors_shop_footer.png")}
       />
       <Text style={styles.text}>© 2022 - Todos os direitos reservados.</Text>
-      <Text style={styles.link} onPress={() => (window.scrollY = 0)}>
+      <Text style={styles.link} onPress={() => (window.scroll({ top: 0 }))}>
         ^
       </Text>
     </View>
