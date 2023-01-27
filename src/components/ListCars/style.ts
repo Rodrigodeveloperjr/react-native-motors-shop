@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     lineHeight: 30,
   },
   menu: {
+    paddingTop: 50,
   },
 });
 

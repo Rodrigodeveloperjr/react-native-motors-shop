@@ -1,7 +1,7 @@
 import { Image, Text, View } from "react-native";
 import { styles } from "./style";
 
-const Footer = () => {
+const Footer = ({buttonScroll}: Function | any) => {
   return (
     <View style={styles.container}>
       <Image
@@ -9,7 +9,7 @@ const Footer = () => {
         source={require("../../../assets/Motors_shop_footer.png")}
       />
       <Text style={styles.text}>© 2022 - Todos os direitos reservados.</Text>
-      <Text style={styles.link} onPress={() => (window.scroll({ top: 0 }))}>
+      <Text style={styles.link} onPress={() => (buttonScroll())}>
         ^
       </Text>
     </View>

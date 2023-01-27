@@ -5,12 +5,22 @@ import { Header } from "../../components/Header";
 import { ListCars } from "../../components/ListCars";
 import { ListMotorcycles } from "../../components/ListMotorcycles";
 import { styles } from "./style";
+import { useRef } from "react";
+
+
 
 const Home = () => {
+  const ref  = useRef<ScrollView>(null)
+  function scroll() {
+    ref.current?.scrollTo({
+      y: 0,
+      animated: true,
+    })
+  }
   return (
     <>
       <Header />
-      <ScrollView>
+      <ScrollView ref={ref}>
         <Banner />
 
         <View style={styles.main}>
@@ -18,7 +28,7 @@ const Home = () => {
           <ListMotorcycles />
         </View>
 
-        <Footer />
+        <Footer buttonScroll={scroll}/>
       </ScrollView>
     </>
   );
