@@ -6,6 +6,7 @@ import { ListCars } from "../../components/ListCars";
 import { ListMotorcycles } from "../../components/ListMotorcycles";
 import { styles } from "./style";
 import { useRef } from "react";
+import { ListAuctions } from "../../components/ListAuctions";
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
         <Banner />
 
         <View style={styles.main}>
+          <ListAuctions />
           <ListCars />
           <ListMotorcycles />
         </View>
