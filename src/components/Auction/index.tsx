@@ -1,9 +1,9 @@
-import { DescriptionProduct } from "../DescriptionProduct";
+import { DescriptionAuction } from "../DescriptionAuction";
+import { AvatarUserAuction } from "../AvatarUserAuction";
 import { Image, Text, View } from "react-native";
 import { PriceAuction } from "../PriceAuction";
 import { TitleAuction } from "../TitleAuction";
 import { YearProduct } from "../YearProduct";
-import { AvatarUser } from "../AvatarUser";
 import { KmProduct } from "../KmProduct";
 import { styles } from "./style";
 import React from "react";
@@ -11,13 +11,13 @@ import React from "react";
 const Auction = () => {
   return (
     <View style={styles.container}>
+      <Image
+        style={styles.image}
+        source={{
+          uri: "https://i.pinimg.com/originals/05/02/da/0502da25d3a9640ad861574a516a4611.png",
+        }}
+      />
       <View style={styles.background}>
-        <Image
-          style={styles.image}
-          source={{
-            uri: "https://i.pinimg.com/originals/05/02/da/0502da25d3a9640ad861574a516a4611.png",
-          }}
-        />
         <View style={styles.viewClock}>
           <Image source={require("../../../assets/Group_13.png")} />
 
@@ -27,9 +27,9 @@ const Auction = () => {
         <View style={styles.viewDescription}>
           <TitleAuction title="Mercedes Benz A 200 CGI ADVANCE SEDAN Mercedes" />
 
-          <DescriptionProduct description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem..." />
+          <DescriptionAuction description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem..." />
 
-          <AvatarUser username="Rodrigo Silva" />
+          <AvatarUserAuction username="Rodrigo Silva" />
 
           <View style={styles.viewYearAndKm}>
             <KmProduct km={100} />

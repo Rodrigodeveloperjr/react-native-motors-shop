@@ -5,7 +5,7 @@ interface IAvatarUserProps {
   username: string;
 }
 
-const AvatarUser = ({ username }: IAvatarUserProps) => {
+const AvatarUserAuction = ({ username }: IAvatarUserProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -24,4 +24,4 @@ const AvatarUser = ({ username }: IAvatarUserProps) => {
   );
 };
 
-export { AvatarUser };
+export { AvatarUserAuction };

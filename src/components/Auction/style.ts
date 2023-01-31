@@ -15,12 +15,11 @@ const styles = StyleSheet.create({
   },
   background: {
     backgroundColor:
-      "linear-gradient(180deg, rgba(0, 0, 0, 0.29) 0%, #000000 100%)",
+      "rgba(0, 0, 0, 0.69)",
     paddingLeft: 22.5,
     paddingRight: 22.5,
     paddingTop: 30,
     paddingBottom: 30,
-    
   },
   viewClock: {
     width: 123,

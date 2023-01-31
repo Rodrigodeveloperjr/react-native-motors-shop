@@ -1,9 +1,9 @@
 import { DescriptionProduct } from "../DescriptionProduct";
+import { AvatarUserProduct } from "../AvatarUserProduct";
 import { TitleProduct } from "../TitleProduct";
 import { PriceProduct } from "../PriceProduct";
 import { ImageProduct } from "../ImageProduct";
 import { YearProduct } from "../YearProduct";
-import { AvatarUser } from "../AvatarUser";
 import { KmProduct } from "../KmProduct";
 import { View } from "react-native";
 import { styles } from "./style";
@@ -27,7 +27,7 @@ const Product = () => {
           industry. Lorem..."
         />
 
-        <AvatarUser username="Samuel Leão" />
+        <AvatarUserProduct username="Samuel Leão" />
 
         <View style={styles.viewKmYearAndPrice}>
           <View style={styles.viewKmAndYear}>
