@@ -7,6 +7,8 @@ import { Seller } from "../../components/Seller";
 import { ScrollView, View } from "react-native";
 import { Photo } from "../../components/Photo";
 import { styles } from "./style";
+import { ListComments } from "../../components/ListComments";
+import { CreateComment } from "../../components/CreateComment";
 
 const PageProductDetails = () => {
   return (
@@ -21,6 +23,8 @@ const PageProductDetails = () => {
           <Description />
           <Gallery />
           <Seller />
+          <ListComments />
+          <CreateComment />
         </View>
 
         <Footer />
