@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     paddingRight: 10,
   },
   containerWhite: {
-    height: 1000,
     backgroundColor: "#E9ECEF",
 
     display: "flex",
@@ -18,6 +17,7 @@ const styles = StyleSheet.create({
 
     paddingLeft: 10,
     paddingRight: 10,
+    paddingBottom: 80,
   },
 });
 
