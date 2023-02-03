@@ -5,8 +5,15 @@ import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { IRoutes } from "../../routes";
+import { useNavigation } from "@react-navigation/native";
+import { StackNavigationProp } from "@react-navigation/stack";
+
+type ISignIn = StackNavigationProp<IRoutes, "SignIn">;
 
 const FormSignIn = () => {
+  const navigation = useNavigation<ISignIn>();
+
   const fieldsValidationSchema = yup.object().shape({
     email: yup.string().required("Usuário obrigatório").email("Email inválido"),
     password: yup
@@ -60,7 +67,12 @@ const FormSignIn = () => {
 
         <Text style={styles.textAccount}>Ainda não possui conta?</Text>
 
-        <Text style={styles.buttonWhite}>Cadastrar</Text>
+        <Text
+          style={styles.buttonWhite}
+          onPress={() => navigation.navigate("SignUp")}
+        >
+          Cadastrar
+        </Text>
       </View>
     </View>
   );

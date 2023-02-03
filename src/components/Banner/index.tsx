@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Text, TouchableWithoutFeedback, View } from "react-native";
 import { styles } from "./style";
 
 const Banner = () => {
@@ -13,8 +13,12 @@ const Banner = () => {
         </Text>
 
         <View style={styles.viewButtons}>
-          <Text style={styles.button}>Carros</Text>
-          <Text style={styles.button}>Motos</Text>
+          <TouchableWithoutFeedback style={styles.button}>
+            <Text style={styles.buttonText}>Carros</Text>
+          </TouchableWithoutFeedback>
+          <TouchableWithoutFeedback style={styles.button}>
+            <Text style={styles.buttonText}>Motos</Text>
+          </TouchableWithoutFeedback>
         </View>
       </View>
     </View>

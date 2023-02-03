@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     height: 396,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   title: {
     fontWeight: "600",
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     height: 117,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   button: {
     display: "flex",
@@ -49,10 +49,18 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#FDFDFD",
     borderRadius: 4,
+  },
+  buttonText: {
     fontWeight: "600",
     fontSize: 16,
     textAlign: "center",
     color: "#FDFDFD",
+  },
+  buttonTextBlack: {
+    fontWeight: "600",
+    fontSize: 16,
+    textAlign: "center",
+    color: "#212529",
   },
 });
 

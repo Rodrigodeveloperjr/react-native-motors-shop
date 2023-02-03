@@ -1,6 +1,6 @@
 import { DescriptionAuction } from "../DescriptionAuction";
 import { AvatarUserAuction } from "../AvatarUserAuction";
-import { Image, Text, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { PriceAuction } from "../PriceAuction";
 import { TitleAuction } from "../TitleAuction";
 import { YearProduct } from "../YearProduct";
@@ -40,11 +40,11 @@ const Auction = () => {
         </View>
       </View>
 
-      <View style={styles.button}>
+      <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Acessar página do leilão</Text>
 
         <Image source={require("../../../assets/Group_29.png")} />
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };

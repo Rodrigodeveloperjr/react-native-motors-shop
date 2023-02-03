@@ -14,6 +14,9 @@ const styles = StyleSheet.create({
     height: 80,
     marginTop: 25,
   },
+  link: {
+    height: 36,
+  },
   logo: {
     width: 153.02,
     height: 26.34,
@@ -71,8 +74,6 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: "#ADB5BD",
     borderRadius: 4,
-  },
-  buttonWhiteText: {
     fontWeight: "600",
     fontSize: 16,
     color: "#0B0D0D",
