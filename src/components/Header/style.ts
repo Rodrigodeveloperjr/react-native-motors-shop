@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     borderBottomWidth: 2,
-    borderColor: "#DEE2E6",
+    borderBottomColor: "#DEE2E6",
     paddingLeft: 16,
     paddingRight: 16,
     height: 80,
+    width: "100%",
     marginTop: 25,
   },
   link: {

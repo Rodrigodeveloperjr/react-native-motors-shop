@@ -1,4 +1,5 @@
-import { Text, TouchableWithoutFeedback, View } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { Text, View } from "react-native";
 import { styles } from "./style";
 
 const Banner = () => {
@@ -13,12 +14,12 @@ const Banner = () => {
         </Text>
 
         <View style={styles.viewButtons}>
-          <TouchableWithoutFeedback style={styles.button}>
+          <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText}>Carros</Text>
-          </TouchableWithoutFeedback>
-          <TouchableWithoutFeedback style={styles.button}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText}>Motos</Text>
-          </TouchableWithoutFeedback>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
